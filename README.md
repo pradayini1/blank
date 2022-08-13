@@ -46,3 +46,9 @@ echo $@ ' -> echo $@'
 # use $# variable to print out
 # number of arguments passed to the bash script
 echo Number of arguments passed: $# ' -> echo Number of arguments passed: $#' 
+-------------------------------------------------------------------------------------
+#!/bin/bash
+# use a subshell $() to execute shell command
+echo $(uname -o)
+# executing bash command without subshell
+echo uname -o
