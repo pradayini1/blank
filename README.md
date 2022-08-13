@@ -1,20 +1,11 @@
 #!/bin/bash
-echo "What is your preferred programming / scripting language"
-echo "1) bash"
-echo "2) perl"
-echo "3) phyton"
-echo "4) c++"
-echo "5) I do not know !"
-read case;
-#simple case bash structure
-# note in this case $case is variable and does not have to
-# be named case this is just an example
-case $case in
-echo "You selected bash";;
-echo "You selected perl";;
-echo "You selected phyton";;
-echo "You selected c++";;
-exit
-esac 
-
+#Declare bash string variable
+BASH_VAR="Bash Script"
+# echo variable BASH_VAR
+echo $BASH_VAR
+#when meta character such us "$" is escaped with "\" it will be read literally
+echo \$BASH_VAR
+# backslash has also special meaning and it can be suppressed with yet another
+"\"
+echo "\\" 
 
