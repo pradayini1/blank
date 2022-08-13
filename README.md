@@ -160,3 +160,58 @@ fi
 fi
 fi
 done
+-----------------------------------------------------------------------------
+#!/bin/bash
+# declare integers
+NUM1=2
+NUM2=2
+if [ $NUM1 -eq $NUM2 ]; then
+ echo "Both values are equal"
+else
+ echo "Values are NOT equal"
+fi 
+-----------------------------------------------------------------------------------------
+#!/bin/bash
+# declare integers
+NUM1=2
+NUM2=1
+if [ $NUM1 -eq $NUM2 ]; then
+ echo "Both Values are equal"
+else
+ echo "Values are NOT equal"
+fi 
+--------------------------------------------------------------------
+#!/bin/bash
+# declare integers
+NUM1=2
+NUM2=1
+if [ $NUM1 -eq $NUM2 ]; then
+ echo "Both values are equal"
+elif [ $NUM1 -gt $NUM2 ]; then
+ echo "NUM1 is greater than NUM2"
+else
+ echo "NUM2 is greater than NUM1"
+fi 
+----------------------------------------------------------
+#!/bin/bash
+#Declare string S1
+S1="Bash"
+#Declare string S2
+S2="Scripting"
+if [ $S1 = $S2 ]; then
+ echo "Both Strings are equal"
+else
+ echo "Strings are NOT equal"
+fi
+------------------------------------------------------------
+#!/bin/bash
+#Declare string S1
+S1="Bash"
+#Declare string S2
+S2="Bash"
+if [ $S1 = $S2 ]; then
+echo "Both Strings are equal"
+else
+echo "Strings are NOT equal"
+fi 
+
