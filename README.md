@@ -117,3 +117,12 @@ echo ${ARRAY[@]}
 # restore stdin from filedescriptor 10
 # and close filedescriptor 10
 exec 0<&10 10<&- 
+---------------------------------------------------------
+#!/bin/bash
+directory="./BashScripting"
+# bash check if directory exists
+if [ -d $directory ]; then
+echo "Directory exists"
+else
+echo "Directory does not exist"
+fi 
