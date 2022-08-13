@@ -222,4 +222,10 @@ echo "File exists"
 else
 echo "File does not exist"
 fi 
+-------------------------
+#!/bin/bash
+while [ ! -e myfile ]; do
+# Sleep until file does exists/is created
+sleep 1
+done 
 
