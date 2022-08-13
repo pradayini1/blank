@@ -1,11 +1,20 @@
 #!/bin/bash
-PS3='Choose one word: '
-# bash select
-select word in "linux" "bash" "scripting" "tutorial"
-do
-echo "The word you have selected is: $word"
-# Break, otherwise endless loop
-break
-done
-exit 0 
+echo "What is your preferred programming / scripting language"
+echo "1) bash"
+echo "2) perl"
+echo "3) phyton"
+echo "4) c++"
+echo "5) I do not know !"
+read case;
+#simple case bash structure
+# note in this case $case is variable and does not have to
+# be named case this is just an example
+case $case in
+echo "You selected bash";;
+echo "You selected perl";;
+echo "You selected phyton";;
+echo "You selected c++";;
+exit
+esac 
+
 
