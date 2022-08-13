@@ -214,4 +214,12 @@ echo "Both Strings are equal"
 else
 echo "Strings are NOT equal"
 fi 
+----------------------------------------------------------
+#!/bin/bash
+file="./file"
+if [ -e $file ]; then
+echo "File exists"
+else
+echo "File does not exist"
+fi 
 
