@@ -4,3 +4,5 @@ STRING="Hello World"
 # print variable on a screen
 echo $STRING 
 ---------------------------------------
+#!/bin/bash
+tar -czf myhome_directory.tar.gz /home/linuxconfig
